@@ -8,13 +8,15 @@ import javafx.stage.Stage;
 
 public class Main extends Application
 {
+    private final int DIALOG_WIDTH = 400;
+    private final int DIALOG_HEIGHT = 500;
 
     @Override
     public void start(Stage primaryStage) throws Exception
     {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, DIALOG_WIDTH, DIALOG_HEIGHT));
         primaryStage.show();
     }
 
